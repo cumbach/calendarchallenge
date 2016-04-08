@@ -123,6 +123,7 @@ h4 {
   font-size: 17px;
   font-weight: bolder;
   padding: 8px;
+  position: relative;
 }
 
 p {
@@ -135,6 +136,15 @@ p {
   position: relative;
 }
 
+.left-article h4 {
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 194px;
+  z-index: 20;
+  background: #F7F9F7;
+}
+
 .left-side img {
   height: 10px;
   width: 10px;
@@ -142,28 +152,40 @@ p {
 }
 
 /*Styling for lines that come from left to center*/
-h4 {
-  position: relative;
+
+
+@keyframes lineout {
+  from { left: -92px;
+       }
+  to {  left: 77px;
+    }
 }
 
+
 .dotted-line {
-  right: -125px;
+  left: -92px;
   top: 14px;
   overflow: hidden;
   height: 15px;
+  width: 300px;
   position: absolute;
+
+  -webkit-animation: lineout 1.5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode:forwards;
+
 }
 
-.first .dotted-line {
-  width: 154px;
-}
-
-.second .dotted-line {
-  width: 147px;
-}
-
-.third .dotted-line {
+.first h4 {
   width: 200px;
+}
+
+.second h4 {
+  width: 206px;
+}
+
+.third h4 {
+  width: 164px;
 }
 
 .dotted-line img {
@@ -192,7 +214,6 @@ h4 {
         left: 71px;
         top: 20px;
     }
-
 }
 
 .center {
@@ -201,12 +222,6 @@ h4 {
   left: 364px;
   top: 100px;
 }
-
-/*center
-position: relative;
-margin: 0 auto;
-float: left;
-*/
 
 .center img {
   position: absolute;
@@ -217,7 +232,6 @@ float: left;
   -webkit-animation-fill-mode:forwards;
 
 }
-
 
 /*Styling for right side*/
 
