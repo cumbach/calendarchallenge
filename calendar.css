@@ -41,8 +41,7 @@ body {
 .content {
   position: relative;
   margin: 0 auto;
-  min-width: 700px;
-  width: 90%;
+  width: 1100px;
   height: 100%;
   background-image:
       linear-gradient(to left, #C9CAC9, #F8F9F7),
@@ -102,20 +101,15 @@ h3 {
 }
 
 /*Styling for left side*/
-/*
-outer
-width: 500px;
-background: green;
-height: 308px;
-display: inline;
-position: relative;*/
 
-/*left-side
-float: left;
-width: 252px;
-text-align: center;
-margin-top: 42px;
-margin-left: 75px;*/
+
+.left-side-outer {
+  width: 500px;
+  background: green;
+  height: 308px;
+  display: inline;
+  position: relative;
+}
 
 .left-side {
   float: left;
@@ -137,7 +131,7 @@ p {
 }
 
 .left-article {
-  margin-bottom: 30px;
+  margin-bottom: 39px;
   position: relative;
 }
 
@@ -153,34 +147,19 @@ h4 {
 }
 
 .dotted-line {
-  left: 269px;
+  right: -125px;
   top: 14px;
-  display: inline-block;
   overflow: hidden;
   height: 15px;
-  /*width: 70px;;*/
-  position: static;
-  float: right;
-  background: blue;
+  position: absolute;
 }
 
-/*line
-right: -171px;
-    top: 14px;
-    display: inline;
-    overflow: hidden;
-    height: 15px;
-    position: absolute;
-    float: right;
-    background: blue;
-    text-align: start;*/
-
 .first .dotted-line {
-  width: 120px;
+  width: 154px;
 }
 
 .second .dotted-line {
-  width: 100px;
+  width: 147px;
 }
 
 .third .dotted-line {
@@ -217,17 +196,17 @@ right: -171px;
 }
 
 .center {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
-  float: left;
+  left: 364px;
+  top: 100px;
 }
 
 /*center
-position: absolute;
+position: relative;
 margin: 0 auto;
-text-align: center;
-align-content: center;
-left: 406px;*/
+float: left;
+*/
 
 .center img {
   position: absolute;
@@ -238,10 +217,6 @@ left: 406px;*/
   -webkit-animation-fill-mode:forwards;
 
 }
-/*opacity: 1;*/
-/*-webkit-transition: opacity 4s; */
-/*transition: rgba(0,0,0,0) 4s;*/
-
 
 
 /*Styling for right side*/
