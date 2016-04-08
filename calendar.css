@@ -16,16 +16,7 @@ html {
   height: 100%;
 }
 
-/*@font-face {
-  font-weight: lighter;
-  font-style: Light SemiCondensed;
-  font-family: "Myriad Pro";
-  src: url("./calendar-assets/fonts/Myriad Pro Light SemiCondensed.otf") format('truetype');
-}*/
-
 @font-face {
-  font-weight: lighter;
-  font-style: Light;
   font-family: "Myriad Pro";
   src: url("./calendar-assets/fonts/MyriadPro-LightSemiExt.ttf") format('truetype');
 }
@@ -33,8 +24,6 @@ html {
 body {
   background: #F7F9F7;
   font-family: Myriad Pro;
-  font-style: Light SemiCondensed;
-  -webkit-font-smoothing: subpixel-antialiased;
   height: 100%;
 }
 
@@ -62,13 +51,6 @@ img {
   height: auto;
 }
 
-.group:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
 /*Styling for Header*/
 
 .header-area {
@@ -80,11 +62,9 @@ img {
   width: 55px;
   margin-right: 20px;
   top: -9px;
-  position: relative;
 }
 
 .header-area h1 {
-  font-family: Myriad Pro;
   font-size: 38px;
   font-weight: bolder;
   color: #333;
@@ -103,13 +83,6 @@ h3 {
 /*Styling for left side*/
 
 
-.left-side-outer {
-  width: 500px;
-  background: green;
-  height: 308px;
-  display: inline;
-  position: relative;
-}
 
 .left-side {
   float: left;
@@ -140,7 +113,6 @@ p {
   margin: 0 auto;
   padding-left: 0px;
   padding-right: 0px;
-  width: 194px;
   z-index: 20;
   background: #F7F9F7;
 }
