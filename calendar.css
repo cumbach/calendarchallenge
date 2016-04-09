@@ -73,19 +73,14 @@ img {
   margin-bottom: 5px;
 }
 
-.header-area span {
-  /*text-decoration: line-through;*/
-}
-
 h3 {
   font-size: 19px;
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.2);;
 }
 
+
 /*Styling for left side*/
-
-
 
 .left-side {
   float: left;
@@ -125,7 +120,7 @@ p {
 
 .walkicon {
   height: 10px;
-  width: 8px;
+  width: 7px;
   display: inline-block;
 }
 
@@ -200,11 +195,12 @@ p {
   -webkit-animation-delay: 3.2s;
 }
 
+
 /*Styling for element that transitions from right to center*/
 
 @-webkit-keyframes fadein {
   to { opacity: 1;
-        transform: translateX(-516px) translateY(-5px) scale(2);
+       transform: translateX(-516px) translateY(-5px) scale(2);
      }
 }
 
