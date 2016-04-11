@@ -14,7 +14,6 @@
 
 html {
   height: 100%;
-  background: #F1F3F1;
 }
 /*
 .group:after {
@@ -29,7 +28,8 @@ html {
 }
 
 body {
-  background: #F8F9F7;
+  background: #F1F3F1;
+
   font-family: Myriad Pro;
   height: 100%;
   min-height: 614px;
@@ -38,6 +38,8 @@ body {
 }
 
 .content {
+  background: #F8F9F7;
+
   position: relative;
   margin: 0 auto;
   width: 1100px;
@@ -118,6 +120,20 @@ p {
 .left-article {
   margin-bottom: 40px;
   position: relative;
+
+  box-sizing: content-box;
+}
+
+.first {
+  height: 73px;
+}
+
+.second {
+  height: 92px;
+}
+
+.third {
+  height: 80px;
 }
 
 .left-article h4 {
